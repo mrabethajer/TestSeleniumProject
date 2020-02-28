@@ -115,7 +115,7 @@ namespace TestSeleniumProject
                 test.Log(Status.Fail, e.ToString());
 
                 test.AddScreenCaptureFromPath(screenpth);
-                //logger.Info("Test failed");//
+                //logger.Info("Test failed");
             }
             finally
             {
