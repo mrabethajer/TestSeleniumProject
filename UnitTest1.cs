@@ -124,5 +124,19 @@ namespace TestSeleniumProject
                 }
             }
         }
+
+         [TestCase]
+        public void readData()
+        {
+
+
+              var directory = new DirectoryInfo(@"C:/Users/hamrabet/Documents/");
+              var myFile = (from f in directory.GetFiles()
+                            orderby f.LastWriteTime descending
+                            select f).First();
+
+              Console.WriteLine(myFile.FullName);
+
+         }
     }
 }
