@@ -81,7 +81,7 @@ namespace TestSeleniumProject
 
                 driver.FindElement(By.Name("OK")).Click();
                 Thread.Sleep(40000);
-                //fin element
+                //fin eleme
                 driver.FindElement(By.Id("59419")).FindElement(By.ClassName("XTPToolBar")).Click();
                 driver.FindElement(By.Name("File")).Click();
                 driver.FindElement(By.Name("Open...	Ctrl+O")).Click();
